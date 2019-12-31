@@ -10,6 +10,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
     <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="fontawesome/css/all.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -22,12 +23,12 @@
     <div class="wrapper">
         <div class="header_top">
             <div class="header_left">
-                <a class="button button_blue" href="#">обратная связь</a>
+                <a class="button button_blue" href="#callback-modal" data-fancybox-modal>обратная связь</a>
                 <div class="socialLinks">
-                    <a class="socialLinks__item" href="#"><img alt="" src=""><i class="fab fa-whatsapp"></i></a>
-                    <a class="socialLinks__item" href="#"><img alt="" src=""><i class="fab fa-telegram-plane"></i></a>
-                    <a class="socialLinks__item" href="#"><img alt="" src=""><i class="fab fa-skype"></i></a>
-                    <a class="socialLinks__item" href="#"><img alt="" src=""><i class="fab fa-viber"></i></a>
+                    <a class="socialLinks__item" href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a class="socialLinks__item" href="#"><i class="fab fa-telegram-plane"></i></a>
+                    <a class="socialLinks__item" href="#"><i class="fab fa-skype"></i></a>
+                    <a class="socialLinks__item" href="#"><i class="fab fa-viber"></i></a>
                 </div>
             </div>
             <div class="header_center">
@@ -448,7 +449,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
                 <div class="feedbackSlider__item">
                     <div class="feedbackSlider__title">
@@ -467,7 +468,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
                 <div class="feedbackSlider__item">
                     <div class="feedbackSlider__title">
@@ -486,7 +487,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
                 <div class="feedbackSlider__item">
                     <div class="feedbackSlider__title">
@@ -505,7 +506,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
                 <div class="feedbackSlider__item">
                     <div class="feedbackSlider__title">
@@ -524,7 +525,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
                 <div class="feedbackSlider__item">
                     <div class="feedbackSlider__title">
@@ -543,7 +544,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
                 <div class="feedbackSlider__item">
                     <div class="feedbackSlider__title">
@@ -562,7 +563,7 @@
                         использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
                         образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
                         привлекательным и живым для визуально-слухового восприятия.</p>
-                    <a class="readMoreModal" href="#">Читать отзыв полностью...</a>
+                    <a class="readMoreModal" href="#feedback-modal" data-fancybox-modal>Читать отзыв полностью...</a>
                 </div>
 
             </div>
@@ -645,16 +646,119 @@
 <footer class="footer">
     <div class="wrapper">
         <div class="footer__wrapper">
-            <div class="footer__logo">
-                <a href="#"><img alt="logo" src="images/logo.png"></a>
-                <div class="header_center__desc">Сусальное золото и серебро<br/>товары для золочения</div>
+            <div class="footer__container">
+                <div class="footer__logo">
+                    <a href="#"><img alt="logo" src="images/logo.png"></a>
+                    <div class="header_center__desc">Сусальное золото и серебро<br/>товары для золочения</div>
+                </div>
+                <div class="socialLinks">
+                    <a class="socialLinks__item" href="#"><i class="fab fa-vk"></i></a>
+                    <a class="socialLinks__item" href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="copyright">
+                    Златовесть &copy; 2015 - 2019 <br/>
+                    Все права защищены
+                </div>
+            </div>
+            <div class="footer__container footer__container__nav">
+                <div class="footer__navTitle">
+                    Навигация:
+                </div>
+                <nav>
+                    <ul class="footer__nav">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Категории товаров</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Доствка и оплата</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__container footer__container__nav">
+                <div class="footer__navTitle">
+                    Категории товаров:
+                </div>
+                <nav>
+                    <ul class="footer__nav">
+                        <li><a href="#">Сусальное золото</a></li>
+                        <li><a href="#">Сусульное серебро</a></li>
+                        <li><a href="#">Инструменты позолотчика</a></li>
+                        <li><a href="#">Пищевое золото</a></li>
+                        <li><a href="#">Поталь</a></li>
+                        <li><a href="#">Расходные материалы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__container">
+                <div class="footer__phones">
+                    <div class="footer__phones__icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="footer__phones__numb">
+                        <a href="#">+7 925 077 28 60</a><br/>
+                        <a href="#">+7 925 077 28 60</a>
+                    </div>
+                </div>
+                <a class="button button_blue" href="#callback-modal" data-fancybox-modal>
+                    заказать обратный звонок
+                </a>
+                <ul class="footer__time">
+                    <li><i class="fas fa-envelope"></i> <a href="#">batfilorob@gmail.com</a></li>
+                    <li><i class="fas fa-history"></i> <span>Пн-Пт, 07:30 - 19:30. Сб 9:00 - 16:00</span></li>
+                </ul>
             </div>
         </div>
     </div>
 </footer>
 
+<div id="callback-modal" class="modal modal-default">
+    <div class="modal-default__title">Оставьте заявку и мы перезвоним вам</div>
+    <form class="callback-form default-form" id="formZvonok">
+        <div class="default-form__group">
+            <label>
+                <input type="text" name="name" class="default-form__input" placeholder="Введите ваше имя" required>
+            </label>
+        </div>
+        <div class="default-form__group">
+            <label>
+                <input type="text" name="tel" class="default-form__input" placeholder="+7 ___ - ___ -__ - __" required>
+            </label>
+        </div>
+        <div class="modal__personaldata">
+            Согласен(а) на обработку <a href="#">персональных данных</a>
+        </div>
+        <div class="default-form__group">
+            <input type="hidden" name="form_subject" value="Модальная форма - заказать обратный звонок">
+            <button type="submit" class="default-form__submit default-form__submit--full button button_blue">заказать
+                обратный звонок
+            </button>
+        </div>
+    </form>
+</div>
+
+<div id="feedback-modal" class="modal modal-default">
+    <div class="feedbackSlider__title feedbackSlider__title_modal">
+        <img alt="user" src="images/main/user.png">
+        <div class="feedbackSlider__title__text">
+            <div class="feedbackSlider__title__name">Алексей Иванов</div>
+            <div class="feedbackSlider__title__city">г. Санкт-Петербург</div>
+        </div>
+    </div>
+    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+        более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+        публичных выступлений в домашних условиях и не только. При создании генератора мы
+        использовали небезизвестный... универсальный код речей. Текст генерируется абзацами
+        случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
+        привлекательным и живым для визуально-слухового восприятия. При создании генератора мы
+        использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным
+        образом от двух до десяти предложений в абзаце, что позволяет сделать текст более
+        привлекательным и живым для визуально-слухового восприятия.</p>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/scripts.js"></script>
 

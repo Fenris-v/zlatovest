@@ -7,15 +7,16 @@ $(document).ready(function () {
             dots: true,
             loop: true,
             margin: 10,
-            nav: false,
+            nav: true,
+            navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
-            responsiveClass: false,
+            responsiveClass: true,
             responsive: {
                 0: {
                     items: 3,
-                    nav: false,
+                    nav: true,
                 }
             }
         }
@@ -29,17 +30,33 @@ $(document).ready(function () {
             dots: false,
             loop: true,
             margin: 0,
-            nav: false,
+            nav: true,
+            navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true,
-            responsiveClass: false,
+            responsiveClass: true,
             responsive: {
                 0: {
                     items: 3,
-                    nav: false,
+                    nav: true,
                 }
             }
         }
     );
+
+    /**
+     * MODAL
+     */
+    $('[data-fancybox-modal]').fancybox({
+        trapFocus: true,
+        autoFocus: false,
+        touch: false,
+        beforeShow: function() {
+            $('html').addClass('scroll-disable');
+        },
+        afterClose: function() {
+            $('html').removeClass('scroll-disable');
+        }
+    });
 });
