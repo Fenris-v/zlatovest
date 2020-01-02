@@ -1,0 +1,159 @@
+@import "variables"
+@import "prefixes"
+
+@media only screen and (max-width: 1000px)
+
+  .header_top
+    flex-wrap: wrap
+
+  .header_center
+    order: 0
+    width: 100%
+    margin: 20px 0 !important
+
+  .header_left
+    order: 1
+    width: 50%
+
+  .header_right
+    width: 50%
+    order: 2
+    text-align: center
+    margin-bottom: 20px
+
+    a
+      width: auto
+
+  .header_left > .socialLinks
+    justify-content: center
+
+  .socialLinks__item
+    margin-right: 20px
+
+    &:last-child
+      margin-right: 0
+
+  .categories__item
+    width: 49%
+
+  .popularGoods__list
+    justify-content: flex-start
+
+  .popularGoods__item
+    width: 32%
+    margin-right: 2%
+
+    &:nth-child(3n)
+      margin-right: 0
+
+  .advantages__item
+    width: 100%
+    padding: 0
+    margin-bottom: 20px
+
+  .advantages__wrapper > hr
+    display: none
+
+  .innerTitle
+    font-size: 30px
+
+  .footer__wrapper
+    flex-wrap: wrap
+
+  .footer__container
+    margin-bottom: 20px !important
+
+    &__nav
+      margin: 0
+
+    &:first-child
+      order: 2
+      width: 49%
+      margin-bottom: 0 !important
+
+    &:nth-child(2)
+      order: 0
+      width: 49%
+
+    &:nth-child(3)
+      order: 1
+      width: 49%
+
+    &:last-child
+      order: 3
+      width: 49%
+
+@media only screen and (max-width: 767px)
+
+  .popularGoods__list
+    justify-content: space-between
+
+  .popularGoods__item
+    width: 49%
+    margin-right: 0
+
+@media only screen and (max-width: 640px)
+
+  .headerNav
+    display: none
+
+  .headerNav_adaptive__phones
+    text-align: center
+
+    a
+      @include font($lightBlue, $semiBold, bold, 16px, 1.2)
+
+  .headerNav_adaptive > .socialLinks
+    margin: 20px 0
+    justify-content: center
+
+  .owl-dot
+    width: 20px !important
+
+  .header_left, .header_right, .header__contacts__hot, .header__contacts__phones
+    display: none
+
+  .header_center
+    margin: 20px 30px !important
+
+  .header__contacts__time
+    border: none !important
+    margin: 0 !important
+    padding: 0 !important
+
+  .titleDots:before, .titleDots:after
+    display: none
+
+  .categories, .popularGoods, .feedback, .client, .advantages, .firstScreenSlider
+    padding-top: 30px
+
+  .titleDots
+    margin-bottom: 30px
+
+  .categories__item
+    width: 100%
+
+  .popularGoods__item
+    width: 100%
+
+  .client__list
+    columns: 1
+
+  .advantages__wrapper
+    margin-bottom: 30px
+
+  .footer__container
+
+    &:first-child
+      order: 3
+      width: 100%
+
+    &:last-child
+      order: 2
+      width: 100%
+      text-align: center
+
+  .footer__phones
+    justify-content: center
+
+@media only screen and (max-width: 480px)

@@ -15,8 +15,16 @@ $(document).ready(function () {
             responsiveClass: true,
             responsive: {
                 0: {
+                    items: 1,
+                    nav: false
+                },
+                641: {
+                    items: 2,
+                    nav: true
+                },
+                900: {
                     items: 3,
-                    nav: true,
+                    nav: true
                 }
             }
         }
@@ -38,8 +46,16 @@ $(document).ready(function () {
             responsiveClass: true,
             responsive: {
                 0: {
+                    items: 1,
+                    nav: false
+                },
+                641: {
+                    items: 2,
+                    nav: true
+                },
+                900: {
                     items: 3,
-                    nav: true,
+                    nav: true
                 }
             }
         }
