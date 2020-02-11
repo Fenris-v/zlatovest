@@ -688,14 +688,14 @@ hr {
   font-size: 30px;
   font-weight: bold;
   font-family: "OpenSans-Regular", sans-serif;
-  color: #00959c;
+  color: #ad9960;
   line-height: 1;
 }
 .popularGoods__price__text {
   font-size: 14px;
   font-weight: normal;
   font-family: "OpenSans-Regular", sans-serif;
-  color: #00959c;
+  color: #ad9960;
   line-height: 1;
 }
 
@@ -802,10 +802,12 @@ hr {
   display: flex;
   text-align: left;
 }
-.advantages__icon img {
-  max-width: 70px;
+
+.advantages__icon {
+  width: 70px;
   margin-right: 40px;
 }
+
 .advantages__desc {
   font-size: 14px;
   font-weight: normal;
@@ -1023,6 +1025,220 @@ hr {
 
 #feedback-modal {
   text-align: left;
+}
+
+/**
+ * @create by Anatoliy
+ * 11-02-2020
+ */
+/* ITEM CARD */
+.descriptionItem, .otherItems, .item__advantages {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+.item_top {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__slider {
+  width: 40%;
+}
+
+.item__specifications {
+  width: 30%;
+}
+
+.item__specifications h1 {
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: bold;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.item__specification__code {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1;
+  font-weight: normal;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-bottom: 30px;
+}
+
+.item__specifications table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.item__specifications tr {
+  border-bottom: 1px solid #f3f3f4;
+}
+
+.item__specifications tr:last-child {
+  border-bottom: none;
+}
+
+.item__specifications td {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "OpenSans-Regular", sans-serif;
+  padding: 5px;
+}
+
+.item__specifications td:last-child {
+  text-align: right;
+  font-weight: normal;
+}
+
+.downloadLink {
+  color: #ad9960;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "OpenSans-Regular", sans-serif;
+  border-bottom: 1px solid #f3f3f4;
+  padding-bottom: 5px;
+}
+
+.item__buy {
+  background: #f3f3f4;
+  width: 25%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+.item__buy__price {
+  font-size: 16px;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.item__buy__price span {
+  font-size: 40px;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+
+.item__buy p {
+  font-size: 16px;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.item__buy li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__buy label, .item__buy input {
+  width: 49%;
+  margin-bottom: 10px;
+}
+
+.item__buy input {
+  background: #ffffff;
+  border: none;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+.button_gold {
+  background: rgb(174,153,96);
+  background: linear-gradient(200deg, rgba(174,153,96,1) 40%, rgba(221,201,132,1) 100%);
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.button_gold:hover {
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.item__buy .button {
+  display: block;
+  width: 100%;
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.button_transparent {
+  color: #ad9960;
+  border: 1px solid #ad9960;
+  display: block;
+  margin-bottom: 20px !important;
+}
+
+.item__buy__consult {
+  color: #ad9960;
+  font-size: 20px;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-bottom: 30px;
+}
+
+.item__buy__phone {
+  color: #000000;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "OpenSans-Regular", sans-serif;
+  margin-bottom: 20px;
+}
+
+.item__buy .socialLinks__item {
+  background: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.item__buy .socialLinks__item i {
+  color: #939393;
+}
+
+.descriptionItem .innerTitle, .otherItems .innerTitle {
+  margin-left: 0;
+}
+
+.titleDots_right {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.titleDots_right:after {
+  content: url(../images/gold-dots.png);
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+.descriptionItem p {
+  padding-top: 30px;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+.otherItems .popularGoods__list {
+  padding-top: 30px;
+}
+
+.item__advantages .innerTitle {
+  margin-left: 0;
 }
 
 /* RESPONSIVE */
