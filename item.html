@@ -12,6 +12,7 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/dan.css" rel="stylesheet">
 
@@ -138,13 +139,55 @@
 <section class="s_item_top">
     <div class="wrapper">
         <div class="item_top">
-            <div class="item__slider">
-                <div class="item__slide">
-                    <a href="#">
-                        <img src="images/item/item1.png" alt="gold">
-                    </a>
+                <div class="item_top__sliders">
+                    <div class="item_top__slider">
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item1.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item2.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item3.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item4.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item5.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item6.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item7.png"/>
+                        </div>
+                    </div>
+
+                    <div class="item_top__slider__nav">
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item1.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item2.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item3.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item4.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item5.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item6.png"/>
+                        </div>
+                        <div class="item_top__slider__item">
+                            <img alt="photo" src="images/item/item7.png"/>
+                        </div>
+                    </div>
                 </div>
-            </div>
             <div class="item__specifications">
                 <h1>Пищевое золото (E175), Спагетти гнездо 3 мм, 0,3 гр.</h1>
                 <p class="item__specification__code">
@@ -180,7 +223,17 @@
                     <ul>
                         <li>
                             <label for="item__buy__count">Выберите<br/>количество:</label>
-                            <input id="item__buy__count" type="text" class="item__buy__count">
+                            <input id="item__buy__count" type="text" class="item__buy__count" value="1">
+                            <a href="#" class="item__buy__count__minus">
+                                <svg width="5" height="10">
+                                    <polyline stroke="#000000" stroke-width="1px" fill="none" points="5,0 0,5 5,10"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="item__buy__count__plus">
+                                <svg width="5" height="10">
+                                    <polyline stroke="#000000" stroke-width="1px" fill="none" points="0,0 5,5 0,10"/>
+                                </svg>
+                            </a>
                         </li>
                         <li>
                             <a class="button button_gold" type="submit">в корзину</a>
@@ -454,6 +507,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/hamburger.js"></script>
 <script src="js/scripts.js"></script>
 
